@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-pattern-top.svg) no-repeat, url(./images/bg-pattern-top.svg) no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    font-family: Kumbh Sans;
+    border-radius: 20px;
+}
+
+#bg-top {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#profile-pic {
+    position: absolute;
+    left: 50%; 
+    transform: translateX(-50%);
+    bottom: 51%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h1 {
+    display: inline;
+    color: hsl(229, 23%, 23%);
+    margin-right: 10px;
+}
+
+#age {
+    display: inline;
+    font-size: 30px;
+    color: hsl(0, 0%, 59%);
+}
+
+#location {
+    color: hsl(0, 0%, 59%);
+    font-size: 18px;
+    margin: 20px 0 35px 0;
+}
+
+.info-top {
+    margin-top: 65px;
+    text-align: center;
+}
+
+hr {
+    color: hsl(0, 0%, 59%);
+}
+
+.info-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 40px 0;
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    font-size: 16px;
+    line-height: 25px;
+}
+
+span {
+    font-size: 25px;
+    font-weight: bold;
+    color: hsl(229, 23%, 23%);
+}
+
+@media (max-width: 500px) {
+
+    .card {
+        max-width: 85%;
+    }
+
+    #profile-pic {
+        bottom: 55%;
+    }
+
+}
+
+
+
+
+
